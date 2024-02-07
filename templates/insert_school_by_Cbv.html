@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background-color: rgb(125, 125, 203);
+        }
+        h1
+        {
+            color: rgb(217, 107, 109);
+        }
+        form
+        {
+            color: aqua;
+        }
+        input
+        {
+            color: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>insert_school_by_Cbv</h1>
+        <form method="POST">
+            {% csrf_token %}
+                {{ESFO.as_p}}
+            <input type="submit" value="submit">
+        </form>
+    </center>
+</body>
+</html>
